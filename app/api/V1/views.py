@@ -15,7 +15,7 @@ class Blogs(Resource):
         req = request.get_json()
         new = {
             "id": len(blog_list) + 1,
-            "tittle": req['tittle'],
+            "title": req['title'],
             "description": req['description'],
             "date": datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
         }
